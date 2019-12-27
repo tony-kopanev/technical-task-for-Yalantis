@@ -2,7 +2,6 @@ import { SET_USERS } from './actionsTypes';
 
 export const getUsers = () => {
 
-  console.log('work');
   return dispatch => {
     fetch('https://yalantis-react-school.herokuapp.com/api/task0/users')
       .then(res => res.json())
